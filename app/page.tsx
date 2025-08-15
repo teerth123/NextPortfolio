@@ -19,12 +19,13 @@ const geistMono = Geist_Mono({
 export default function DexTLogo() {
   return (
     <>
-      <div className="h-[50vh] w-screen flex flex-col justify-center items-center bg-black">
+      <div className="min-h-[50vh] sm:h-[50vh] w-screen flex flex-col justify-center items-center bg-black px-4 py-8">
         <div
-          className="absolute z-0 rounded-full opacity-70 bg-[linear-gradient(180deg,rgba(133,133,133,0)_0%,rgba(0,0,0,0.2)_79.81%)] scale-200">
+          className="absolute z-0 rounded-full opacity-70 bg-[linear-gradient(180deg,rgba(133,133,133,0)_0%,rgba(0,0,0,0.2)_79.81%)] scale-150 sm:scale-200">
           <motion.svg
-            width="521"
-            height="521"
+            width="300"
+            height="300"
+            className="sm:w-[400px] sm:h-[400px] lg:w-[521px] lg:h-[521px]"
             viewBox="0 0 521 521"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
@@ -214,9 +215,9 @@ export default function DexTLogo() {
             </defs>
           </motion.svg>
         </div>
-        <div className="z-10">
+        <div className="z-10 max-w-full">
           <motion.h1
-            className={`text-left my-5 text-[20px] font-semibold text-[#8b8b8b]`}
+            className={`text-center sm:text-left my-3 sm:my-5 text-[16px] sm:text-[20px] font-semibold text-[#8b8b8b]`}
             initial={{
               opacity: 0,
               y: -20,
@@ -239,10 +240,11 @@ export default function DexTLogo() {
             transition={{
               duration: 2.5,
             }}
-          className="h-fit w-fit flex justify-center items-center   ">
+          className="h-fit w-fit flex justify-center items-center overflow-hidden">
             <svg
-              width="434"
-              height="133"
+              width="260"
+              height="80"
+              className="sm:w-[350px] sm:h-[100px] lg:w-[434px] lg:h-[133px] max-w-full h-auto"
               viewBox="0 0 434 133"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
@@ -372,7 +374,10 @@ export default function DexTLogo() {
           transition={{
             duration: 2.5,
           }}
-        className={`text-center mt-10 text-[20px] text-[#888]`}>Coding, designing, failing, and learning constantly <br /> all to push my luck arc and bend the odds.</motion.h1>
+        className={`text-center mt-6 sm:mt-10 px-4 text-[14px] sm:text-[18px] lg:text-[20px] text-[#888] leading-relaxed max-w-4xl`}>
+          Coding, designing, failing, and learning constantly <br className="hidden sm:block" /> 
+          <span className="sm:hidden"> </span>all to push my luck arc and bend the odds.
+        </motion.h1>
       </div>
 
       <Work />

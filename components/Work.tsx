@@ -66,20 +66,20 @@ export default function Work() {
 
     return (
         <>
-            <div className="relative flex flex-wrap items-center justify-center pb-10 gap-3 sm:gap-[45px] bg-black px-4 z-20">
+            <div className="relative flex items-center justify-center pb-10 gap-1 sm:gap-3 md:gap-4 lg:gap-6 xl:gap-[45px] bg-black px-2 sm:px-4 z-20">
                 {["Chaos", "dev", "designs", "other"].map((cat) => (
-                    <div className="cursor-pointer" key={cat} onClick={() => setOption(cat as "Chaos" | WorkCategory)}>
+                    <div className="cursor-pointer flex-shrink-0" key={cat} onClick={() => setOption(cat as "Chaos" | WorkCategory)}>
                         {option === cat ? (
                             // Selected button
-                            <div className="p-[5px] h-fit w-[120px] sm:w-[150px] rounded-[50px] bg-gradient-to-r from-[#212121] via-[#737373] via-[#212121] via-[#737373] to-[#212121] text-center">
-                                <h1 className="font-semibold text-[14px] sm:text-[16px] text-black bg-white px-[15px] sm:px-[20px] py-[8px] sm:py-[10px] rounded-[50px]">
+                            <div className="p-[4px] sm:p-[5px] h-fit w-[80px] sm:w-[100px] md:w-[120px] lg:w-[140px] xl:w-[150px] rounded-[50px] bg-gradient-to-r from-[#212121] via-[#737373] to-[#212121] text-center">
+                                <h1 className="font-semibold text-[10px] sm:text-[12px] md:text-[14px] lg:text-[15px] xl:text-[16px] text-black bg-white px-[8px] sm:px-[10px] md:px-[15px] lg:px-[18px] xl:px-[20px] py-[4px] sm:py-[6px] md:py-[8px] lg:py-[9px] xl:py-[10px] rounded-[50px]">
                                     {cat.charAt(0).toUpperCase() + cat.slice(1)}
                                 </h1>
                             </div>
                         ) : (
                             // Unselected button
-                            <div className="pt-[1px] h-fit bg-white rounded-[50px] w-[120px] sm:w-[150px] text-center">
-                                <h1 className="font-semibold text-[14px] sm:text-[16px] px-[15px] sm:px-[20px] py-[8px] sm:py-[10px] rounded-[50px] text-white bg-gradient-to-r from-[#313131] via-[#000000] to-[#313131]">
+                            <div className="pt-[1px] h-fit bg-white rounded-[50px] w-[80px] sm:w-[100px] md:w-[120px] lg:w-[140px] xl:w-[150px] text-center">
+                                <h1 className="font-semibold text-[10px] sm:text-[12px] md:text-[14px] lg:text-[15px] xl:text-[16px] px-[8px] sm:px-[10px] md:px-[15px] lg:px-[18px] xl:px-[20px] py-[4px] sm:py-[6px] md:py-[8px] lg:py-[9px] xl:py-[10px] rounded-[50px] text-white bg-gradient-to-r from-[#313131] via-[#000000] to-[#313131]">
                                     {cat.charAt(0).toUpperCase() + cat.slice(1)}
                                 </h1>
                             </div>
