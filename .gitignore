@@ -57,3 +57,4 @@ coverage/
 
 # Optional: Local development
 .vercel
+.next
