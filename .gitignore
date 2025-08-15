@@ -1,6 +1,59 @@
+# Dependencies
 node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Next.js
+.next/
+out/
+build/
+
+# Environment variables
 .env
-dist/
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Logs
+logs
+*.log
+
+# OS generated files
 .DS_Store
-npm-debug.log
-yarn-error.log
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Temporary files
+*.tmp
+*.temp
+temp/
+
+# Cache
+.eslintcache
+*.tsbuildinfo
+.turbo/
+
+# Coverage reports
+coverage/
+*.lcov
+
+# Optional: Local development
+.vercel
